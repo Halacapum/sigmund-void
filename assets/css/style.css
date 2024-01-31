@@ -1,56 +1,78 @@
 /*import fonts from google*/
-@import url('https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Sixtyfour&display=swap");
 
 /* asterisk wildcard selector to override default styles added by the browser */
 * {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
 
 /*General styles*/
 body {
-    min-height: 100vh;
-    max-width: 100vw;
-    display: flex;
-    flex-direction: column;
-    text-align: center
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 header {
-    background-color: teal;
-    height: 200px;
-    font-family: 'Sixtyfour', sans-serif;
-    box-shadow: 0 10px 10px darkred
+  background-color: teal;
+  height: 140px;
+  font-family: "Sixtyfour", sans-serif;
+  box-shadow: 0 10px 10px darkred;
+  z-index: 99;
 }
 
 main {
-    background-color: yellowgreen;
-    flex: 1 0 auto
+  background-color: yellowgreen;
+  flex: 1 0 auto;
 }
 
 footer {
-    background-color: red;
-    position: fixed;
-    height: 100px;
-    width: 100%
+  background-color: red;
+  position: fixed;
+  bottom:0;
+  height: 100px;
+  width: 100%;
+  font-size: 2rem;
+  font-family: "Sixtyfour", sans-serif;
 }
-
+footer h4 {padding:10px 0}
 
 h1 {
-    font-style: italic
+  font-style: italic;
+  font-size:4rem;
+  padding:20px 0
 }
+
 
 /*hyperlink style*/
 a {
-    color: green;
+  color: indigo;
+  text-decoration:none
 }
 
-h1>a {
-    color: indigo
+header a {
+  color: indigo;
+  text-decoration: none;
+  letter-spacing: 3px;
 }
 
 a:hover {
-    color: pink;
+  color: pink;
+  text-decoration:underline
+}
+
+footer a {
+    color:rgb(27, 207, 192)}
+footer a:hover{
+    color:rgb(146, 211, 27)
+}
+
+#links {
+  display: flex;
+  justify-content:space-evenly;
+  list-style-type:none
 }
