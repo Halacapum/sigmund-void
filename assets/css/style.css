@@ -3,76 +3,89 @@
 
 /* asterisk wildcard selector to override default styles added by the browser */
 * {
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 /*General styles*/
 body {
-  min-height: 100vh;
-  max-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+    max-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: "Sixtyfour", sans-serif;
+    text-align: center;
 }
 
 header {
-  background-color: teal;
-  height: 140px;
-  font-family: "Sixtyfour", sans-serif;
-  box-shadow: 0 10px 10px darkred;
-  z-index: 99;
+    background-color: teal;
+    height: 140px;
+    box-shadow: 0 10px 10px darkred;
+    z-index: 99;
+    width: 100%
+}
+
+header a {
+    max-width: 280px
 }
 
 main {
-  background-color: yellowgreen;
-  flex: 1 0 auto;
+    background-color: yellowgreen;
+    flex: 1 0 100%;
 }
 
 footer {
-  background-color: red;
-  position: fixed;
-  bottom:0;
-  height: 100px;
-  width: 100%;
-  font-size: 2rem;
-  font-family: "Sixtyfour", sans-serif;
+    background-color: red;
+    position: fixed;
+    bottom: 0;
+    min-height: 100px;
+    max-height: 200px;
+    width: 100%;
+    flex-direction: row
 }
-footer h4 {padding:10px 0}
+
+footer h4 {
+    padding: 10px 0
+}
 
 h1 {
-  font-style: italic;
-  font-size:4rem;
-  padding:20px 0
+    font-style: italic;
+    padding: 20px 0
 }
 
 
 /*hyperlink style*/
 a {
-  color: indigo;
-  text-decoration:none
+    color: indigo;
+    text-decoration: none
 }
 
 header a {
-  color: indigo;
-  text-decoration: none;
-  letter-spacing: 3px;
+    color: indigo;
+    text-decoration: none;
+    letter-spacing: 3px;
 }
 
 a:hover {
-  color: pink;
-  text-decoration:underline
+    color: pink;
+    text-decoration: underline
 }
 
 footer a {
-    color:rgb(27, 207, 192)}
-footer a:hover{
-    color:rgb(146, 211, 27)
+    color: rgb(27, 207, 192)
+}
+
+footer a:hover {
+    color: rgb(146, 211, 27)
 }
 
 #links {
-  display: flex;
-  justify-content:space-evenly;
-  list-style-type:none
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    flex-direction: row;
 }
+
+
+@media screen and (max-width:992) {}
