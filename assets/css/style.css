@@ -268,7 +268,12 @@ footer a:hover {
     #logo {
         width: 80%
     }
-
+@media screen and (min-width:576px){
+    #photos{
+        column-count:2;
+        column-gap:0
+    }
+}
 @media screen and (min-width:670px){
     header>a>h1{
         left: 15px;
@@ -277,6 +282,12 @@ footer a:hover {
     #logo{
         width:70%
     }
+
+@media screen and (min-width:768px){
+    #photos{
+        column-count:3
+    }
+}
 
 @media screen and (min-width:870px) {
     #logo {
