@@ -28,11 +28,13 @@ header {
 }
 
 header h1 {
+    position:relative;
+    top:-18px;
     font-size: 20px;
-    margin-top:-5px;
     color: indigo;
     text-decoration: none;
     text-align:left;
+    font-style: italic;
 }
 
 #menu {
@@ -43,8 +45,11 @@ header h1 {
     color: indigo;
 }
 #menu>li{
-    margin-bottom:1em;
+    margin-bottom:5px;
     font-size:1.5em
+}
+#menu li a:hover{
+    color:rgb(253, 171, 185)
 }
 
 .active {
@@ -57,7 +62,7 @@ nav {
     background-color: teal;
     width: 100%;
     left: 0;
-    padding: 1em 1rem;
+    padding: 0.5em 0.5em;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
     top: 70px;
@@ -74,7 +79,12 @@ nav {
     display: none;
 }
 
-#nav-toggle.active{
+.nav-toggle-label{
+    font-size:3em;
+    padding:10px 10px
+}
+
+.nav-toggle-label.active{
     color:rgb(255, 0, 255)
 }
 
@@ -95,12 +105,6 @@ footer {
 footer h4 {
     padding: 10px 0
 }
-
-h1 {
-    font-style: italic;
-    padding: 20px 0
-}
-
 
 /*hyperlink style*/
 a {
